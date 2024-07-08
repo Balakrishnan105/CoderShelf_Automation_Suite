@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Project by groups]">
+  <test name="GRP-smoke(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.selenium.TestScripts.TestScript">
+        <methods>
+          <include name="afterEachTest"/>
+          <include name="searchBoxValidation"/>
+          <include name="BeforeTest"/>
+          <include name="reportInfo"/>
+          <include name="BeforeMethod"/>
+          <include name="AfterTest"/>
+          <include name="finishReport"/>
+          <include name="beforeEachTest"/>
+        </methods>
+      </class> <!-- com.selenium.TestScripts.TestScript -->
+    </classes>
+  </test> <!-- GRP-smoke(failed) -->
+</suite> <!-- Failed suite [Project by groups] -->

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [UL by groups]">
+  <test verbose="2" name="GRP-GC">
+    <groups>
+      <run>
+        <include name="GC"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.selenium.TestScripts.TestCasesId"/>
+    </classes>
+  </test> <!-- GRP-GC -->
+  <test name="GRP-GC(failed)">
+    <groups>
+      <run>
+        <include name="GC"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.selenium.TestScripts.TestCasesId">
+        <methods>
+          <include name="BeforeMethod"/>
+          <include name="GiftCardsValidation"/>
+          <include name="BeforeTest"/>
+        </methods>
+      </class> <!-- com.selenium.TestScripts.TestCasesId -->
+    </classes>
+  </test> <!-- GRP-GC(failed) -->
+</suite> <!-- Failed suite [UL by groups] -->

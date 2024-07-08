@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Smoke Suite]">
+  <test name="Smoke Test(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.selenium.testScripts.TestScript">
+        <methods>
+          <include name="searchBoxValidation"/>
+          <include name="urlValidation"/>
+          <include name="beforeTest"/>
+          <include name="loginIconValidation"/>
+        </methods>
+      </class> <!-- com.selenium.testScripts.TestScript -->
+    </classes>
+  </test> <!-- Smoke Test(failed) -->
+</suite> <!-- Failed suite [Smoke Suite] -->

@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-skipped">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>D:\Eclipse\The Coder's Shelf -- Urban Ladder\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">3 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>3 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">31 methods,  1 skipped,  30 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.selenium.testScripts.TestScript" hash-for-method="loginIconValidation">loginIconValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.selenium.testScripts.TestScript" hash-for-method="chosenDateAssertion">chosenDateAssertion</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.selenium.testScripts.TestScript" hash-for-method="chosenOccasionAssertion">chosenOccasionAssertion</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.selenium.testScripts.TestScript" hash-for-method="excludeOutOfStockFilterValidation(Bookshelves)">excludeOutOfStockFilterValidation(Bookshelves)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.selenium.testScripts.TestScript" hash-for-method="getBeingatHomeCollectionsList">getBeingatHomeCollectionsList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.selenium.testScripts.TestScript" hash-for-method="getBookshelvesNameAndPrice(Bookshelves)">getBookshelvesNameAndPrice(Bookshelves)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.selenium.testScripts.TestScript" hash-for-method="getBookshelvesNameAndPrice(Bookshelves)">getBookshelvesNameAndPrice(Bookshelves)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.selenium.testScripts.TestScript" hash-for-method="getStudyChairsNameAndPrice(Study Chairs)">getStudyChairsNameAndPrice(Study Chairs)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.selenium.testScripts.TestScript" hash-for-method="getStudyChairsNameAndPrice(Study Chairs)">getStudyChairsNameAndPrice(Study Chairs)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.selenium.testScripts.TestScript" hash-for-method="giftCardsCalendarAssertion">giftCardsCalendarAssertion</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.selenium.testScripts.TestScript" hash-for-method="giftCardsFormValidation(sathya@gmail.com, sathya@gmail.com, Coders, codersshelfgmail.com, 9.87654321E9)">giftCardsFormValidation(sathya@gmail.com, sathya@gmail.com, Coders, codersshelfgmail.com, 9.87654321E9)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.selenium.testScripts.TestScript" hash-for-method="giftCardsFormValidation(sathya@gmail.com, sathya@gmail.com, Coders, codersshelfgmail.com, 9.87654321E9)">giftCardsFormValidation(sathya@gmail.com, sathya@gmail.com, Coders, codersshelfgmail.com, 9.87654321E9)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.selenium.testScripts.TestScript" hash-for-method="giftCardsLinkTextNavigationValidation">giftCardsLinkTextNavigationValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.selenium.testScripts.TestScript" hash-for-method="invalidDataSearchBoxValidation(123#)">invalidDataSearchBoxValidation(123#)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.selenium.testScripts.TestScript" hash-for-method="invalidEmailLoginErrorMessageValidation">invalidEmailLoginErrorMessageValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.selenium.testScripts.TestScript" hash-for-method="invalidPasswordloginErrorMessageValidation">invalidPasswordloginErrorMessageValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.selenium.testScripts.TestScript" hash-for-method="loginIconValidation">loginIconValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.selenium.testScripts.TestScript" hash-for-method="loginIconValidation">loginIconValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.selenium.testScripts.TestScript" hash-for-method="navigateUsingSuggestionsResultPageAssertion(Bookshelves)">navigateUsingSuggestionsResultPageAssertion(Bookshelves)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.selenium.testScripts.TestScript" hash-for-method="navigationUsingSeacrhIconResultsPageAssertion(Study Chairs)">navigationUsingSeacrhIconResultsPageAssertion(Study Chairs)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.selenium.testScripts.TestScript" hash-for-method="navigationUsingSearchIconValidation(Study Chairs)">navigationUsingSearchIconValidation(Study Chairs)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.selenium.testScripts.TestScript" hash-for-method="navigationUsingSuggestionsValidation(Bookshelves)">navigationUsingSuggestionsValidation(Bookshelves)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.selenium.testScripts.TestScript" hash-for-method="priceFilterValidation(Bookshelves)">priceFilterValidation(Bookshelves)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.selenium.testScripts.TestScript" hash-for-method="searchBoxValidation(Study Chairs)">searchBoxValidation(Study Chairs)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.selenium.testScripts.TestScript" hash-for-method="searchBoxValidation(Study Chairs)">searchBoxValidation(Study Chairs)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.selenium.testScripts.TestScript" hash-for-method="sortByFilterValidation(Study Chairs)">sortByFilterValidation(Study Chairs)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.selenium.testScripts.TestScript" hash-for-method="storageTypeFilterValidation(Bookshelves)">storageTypeFilterValidation(Bookshelves)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.selenium.testScripts.TestScript" hash-for-method="urlValidation">urlValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.selenium.testScripts.TestScript" hash-for-method="urlValidation">urlValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.selenium.testScripts.TestScript" hash-for-method="validLoginCredentialsValidation">validLoginCredentialsValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.selenium.testScripts.TestScript" hash-for-method="validLoginCredentialsValidation">validLoginCredentialsValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.selenium.testScripts.TestScript</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginIconValidation">
+                  </a> <!-- loginIconValidation -->
+                  <span class="method-name">loginIconValidation</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.partialLinkText: Close (tried for 60 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.selenium.utilities.HandlingAlerts.popup(HandlingAlerts.java:14)
+	at com.selenium.main.MainClass.closePopup(MainClass.java:74)
+	at com.selenium.testScripts.TestScript.loginIconValidation(TestScript.java:150)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;partial link text&quot;,&quot;selector&quot;:&quot;Close&quot;}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-66KSTJD3&apos;, ip: &apos;192.168.0.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Sathya\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:49590}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 8ae2e833d75a1304532bbb632b96a4a1
+*** Element info: {Using=partial link text, value=Close}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByPartialLinkText(RemoteWebDriver.java:388)
+	at org.openqa.selenium.By$ByPartialLinkText.findElement(By.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 30 more
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.selenium.testScripts.TestScript</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="chosenDateAssertion">
+                  </a> <!-- chosenDateAssertion -->
+                  <span class="method-name">chosenDateAssertion</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="chosenOccasionAssertion">
+                  </a> <!-- chosenOccasionAssertion -->
+                  <span class="method-name">chosenOccasionAssertion</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="excludeOutOfStockFilterValidation(Bookshelves)">
+                  </a> <!-- excludeOutOfStockFilterValidation(Bookshelves) -->
+                  <span class="method-name">excludeOutOfStockFilterValidation</span>
+                  <span class="parameters">(Bookshelves)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getBeingatHomeCollectionsList">
+                  </a> <!-- getBeingatHomeCollectionsList -->
+                  <span class="method-name">getBeingatHomeCollectionsList</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getBookshelvesNameAndPrice(Bookshelves)">
+                  </a> <!-- getBookshelvesNameAndPrice(Bookshelves) -->
+                  <span class="method-name">getBookshelvesNameAndPrice</span>
+                  <span class="parameters">(Bookshelves)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getBookshelvesNameAndPrice(Bookshelves)">
+                  </a> <!-- getBookshelvesNameAndPrice(Bookshelves) -->
+                  <span class="method-name">getBookshelvesNameAndPrice</span>
+                  <span class="parameters">(Bookshelves)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getStudyChairsNameAndPrice(Study Chairs)">
+                  </a> <!-- getStudyChairsNameAndPrice(Study Chairs) -->
+                  <span class="method-name">getStudyChairsNameAndPrice</span>
+                  <span class="parameters">(Study Chairs)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getStudyChairsNameAndPrice(Study Chairs)">
+                  </a> <!-- getStudyChairsNameAndPrice(Study Chairs) -->
+                  <span class="method-name">getStudyChairsNameAndPrice</span>
+                  <span class="parameters">(Study Chairs)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="giftCardsCalendarAssertion">
+                  </a> <!-- giftCardsCalendarAssertion -->
+                  <span class="method-name">giftCardsCalendarAssertion</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="giftCardsFormValidation(sathya@gmail.com, sathya@gmail.com, Coders, codersshelfgmail.com, 9.87654321E9)">
+                  </a> <!-- giftCardsFormValidation(sathya@gmail.com, sathya@gmail.com, Coders, codersshelfgmail.com, 9.87654321E9) -->
+                  <span class="method-name">giftCardsFormValidation</span>
+                  <span class="parameters">(sathya@gmail.com, sathya@gmail.com, Coders, codersshelfgmail.com, 9.87654321E9)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="giftCardsFormValidation(sathya@gmail.com, sathya@gmail.com, Coders, codersshelfgmail.com, 9.87654321E9)">
+                  </a> <!-- giftCardsFormValidation(sathya@gmail.com, sathya@gmail.com, Coders, codersshelfgmail.com, 9.87654321E9) -->
+                  <span class="method-name">giftCardsFormValidation</span>
+                  <span class="parameters">(sathya@gmail.com, sathya@gmail.com, Coders, codersshelfgmail.com, 9.87654321E9)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="giftCardsLinkTextNavigationValidation">
+                  </a> <!-- giftCardsLinkTextNavigationValidation -->
+                  <span class="method-name">giftCardsLinkTextNavigationValidation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidDataSearchBoxValidation(123#)">
+                  </a> <!-- invalidDataSearchBoxValidation(123#) -->
+                  <span class="method-name">invalidDataSearchBoxValidation</span>
+                  <span class="parameters">(123#)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidEmailLoginErrorMessageValidation">
+                  </a> <!-- invalidEmailLoginErrorMessageValidation -->
+                  <span class="method-name">invalidEmailLoginErrorMessageValidation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidPasswordloginErrorMessageValidation">
+                  </a> <!-- invalidPasswordloginErrorMessageValidation -->
+                  <span class="method-name">invalidPasswordloginErrorMessageValidation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginIconValidation">
+                  </a> <!-- loginIconValidation -->
+                  <span class="method-name">loginIconValidation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginIconValidation">
+                  </a> <!-- loginIconValidation -->
+                  <span class="method-name">loginIconValidation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateUsingSuggestionsResultPageAssertion(Bookshelves)">
+                  </a> <!-- navigateUsingSuggestionsResultPageAssertion(Bookshelves) -->
+                  <span class="method-name">navigateUsingSuggestionsResultPageAssertion</span>
+                  <span class="parameters">(Bookshelves)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigationUsingSeacrhIconResultsPageAssertion(Study Chairs)">
+                  </a> <!-- navigationUsingSeacrhIconResultsPageAssertion(Study Chairs) -->
+                  <span class="method-name">navigationUsingSeacrhIconResultsPageAssertion</span>
+                  <span class="parameters">(Study Chairs)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigationUsingSearchIconValidation(Study Chairs)">
+                  </a> <!-- navigationUsingSearchIconValidation(Study Chairs) -->
+                  <span class="method-name">navigationUsingSearchIconValidation</span>
+                  <span class="parameters">(Study Chairs)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigationUsingSuggestionsValidation(Bookshelves)">
+                  </a> <!-- navigationUsingSuggestionsValidation(Bookshelves) -->
+                  <span class="method-name">navigationUsingSuggestionsValidation</span>
+                  <span class="parameters">(Bookshelves)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="priceFilterValidation(Bookshelves)">
+                  </a> <!-- priceFilterValidation(Bookshelves) -->
+                  <span class="method-name">priceFilterValidation</span>
+                  <span class="parameters">(Bookshelves)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchBoxValidation(Study Chairs)">
+                  </a> <!-- searchBoxValidation(Study Chairs) -->
+                  <span class="method-name">searchBoxValidation</span>
+                  <span class="parameters">(Study Chairs)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchBoxValidation(Study Chairs)">
+                  </a> <!-- searchBoxValidation(Study Chairs) -->
+                  <span class="method-name">searchBoxValidation</span>
+                  <span class="parameters">(Study Chairs)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sortByFilterValidation(Study Chairs)">
+                  </a> <!-- sortByFilterValidation(Study Chairs) -->
+                  <span class="method-name">sortByFilterValidation</span>
+                  <span class="parameters">(Study Chairs)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="storageTypeFilterValidation(Bookshelves)">
+                  </a> <!-- storageTypeFilterValidation(Bookshelves) -->
+                  <span class="method-name">storageTypeFilterValidation</span>
+                  <span class="parameters">(Bookshelves)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="urlValidation">
+                  </a> <!-- urlValidation -->
+                  <span class="method-name">urlValidation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="urlValidation">
+                  </a> <!-- urlValidation -->
+                  <span class="method-name">urlValidation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validLoginCredentialsValidation">
+                  </a> <!-- validLoginCredentialsValidation -->
+                  <span class="method-name">validLoginCredentialsValidation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validLoginCredentialsValidation">
+                  </a> <!-- validLoginCredentialsValidation -->
+                  <span class="method-name">validLoginCredentialsValidation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\Eclipse\The Coder's Shelf -- Urban Ladder\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Suite&quot;&gt;
+  &lt;test name=&quot;Smoke Test&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;smoke&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.selenium.testScripts.TestScript&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Smoke Test --&gt;
+  &lt;test name=&quot;Regression Test&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;regression&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.selenium.testScripts.TestScript&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Regression Test --&gt;
+  &lt;test name=&quot;E2E testing&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.selenium.testScripts.TestScript&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- E2E testing --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Smoke Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Regression Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">E2E testing (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">negative</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">invalidDataSearchBoxValidation</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">invalidEmailLoginErrorMessageValidation</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">invalidPasswordloginErrorMessageValidation</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">getBookshelvesNameAndPrice</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getStudyChairsNameAndPrice</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">giftCardsFormValidation</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">validLoginCredentialsValidation</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">loginIconValidation</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">searchBoxValidation</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">urlValidation</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(31);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'loginIconValidation')
+data.setCell(0, 2, 'com.selenium.testScripts.TestScript')
+data.setCell(0, 3, 90209);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'validLoginCredentialsValidation')
+data.setCell(1, 2, 'com.selenium.testScripts.TestScript')
+data.setCell(1, 3, 39204);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'validLoginCredentialsValidation')
+data.setCell(2, 2, 'com.selenium.testScripts.TestScript')
+data.setCell(2, 3, 38764);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'invalidPasswordloginErrorMessageValidation')
+data.setCell(3, 2, 'com.selenium.testScripts.TestScript')
+data.setCell(3, 3, 33845);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'invalidEmailLoginErrorMessageValidation')
+data.setCell(4, 2, 'com.selenium.testScripts.TestScript')
+data.setCell(4, 3, 32904);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'loginIconValidation')
+data.setCell(5, 2, 'com.selenium.testScripts.TestScript')
+data.setCell(5, 3, 27072);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'loginIconValidation')
+data.setCell(6, 2, 'com.selenium.testScripts.TestScript')
+data.setCell(6, 3, 26951);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'getBookshelvesNameAndPrice')
+data.setCell(7, 2, 'com.selenium.testScripts.TestScript')
+data.setCell(7, 3, 21179);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'getBookshelvesNameAndPrice')
+data.setCell(8, 2, 'com.selenium.testScripts.TestScript')
+data.setCell(8, 3, 20575);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'giftCardsFormValidation')
+data.setCell(9, 2, 'com.selenium.testScripts.TestScript')
+data.setCell(9, 3, 12775);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'excludeOutOfStockFilterValidation')
+data.setCell(10, 2, 'com.selenium.testScripts.TestScript')
+data.setCell(10, 3, 12452);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'giftCardsFormValidation')
+data.setCell(11, 2, 'com.selenium.testScripts.TestScript')
+data.setCell(11, 3, 11392);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'getStudyChairsNameAndPrice')
+data.setCell(12, 2, 'com.selenium.testScripts.TestScript')
+data.setCell(12, 3, 11313);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'storageTypeFilterValidation')
+data.setCell(13, 2, 'com.selenium.testScripts.TestScript')
+data.setCell(13, 3, 10112);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'getStudyChairsNameAndPrice')
+data.setCell(14, 2, 'com.selenium.testScripts.TestScript')
+data.setCell(14, 3, 10074);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'chosenDateAssertion')
+data.setCell(15, 2, 'com.selenium.testScripts.TestScript')
+data.setCell(15, 3, 9906);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'giftCardsCalendarAssertion')
+data.setCell(16, 2, 'com.selenium.testScripts.TestScript')
+data.setCell(16, 3, 9886);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'priceFilterValidation')
+data.setCell(17, 2, 'com.selenium.testScripts.TestScript')
+data.setCell(17, 3, 9166);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'navigationUsingSuggestionsValidation')
+data.setCell(18, 2, 'com.selenium.testScripts.TestScript')
+data.setCell(18, 3, 7205);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'sortByFilterValidation')
+data.setCell(19, 2, 'com.selenium.testScripts.TestScript')
+data.setCell(19, 3, 6883);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'navigationUsingSeacrhIconResultsPageAssertion')
+data.setCell(20, 2, 'com.selenium.testScripts.TestScript')
+data.setCell(20, 3, 5216);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'getBeingatHomeCollectionsList')
+data.setCell(21, 2, 'com.selenium.testScripts.TestScript')
+data.setCell(21, 3, 5121);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'navigationUsingSearchIconValidation')
+data.setCell(22, 2, 'com.selenium.testScripts.TestScript')
+data.setCell(22, 3, 4540);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'giftCardsLinkTextNavigationValidation')
+data.setCell(23, 2, 'com.selenium.testScripts.TestScript')
+data.setCell(23, 3, 4486);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'chosenOccasionAssertion')
+data.setCell(24, 2, 'com.selenium.testScripts.TestScript')
+data.setCell(24, 3, 3966);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'navigateUsingSuggestionsResultPageAssertion')
+data.setCell(25, 2, 'com.selenium.testScripts.TestScript')
+data.setCell(25, 3, 2894);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'invalidDataSearchBoxValidation')
+data.setCell(26, 2, 'com.selenium.testScripts.TestScript')
+data.setCell(26, 3, 2699);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'searchBoxValidation')
+data.setCell(27, 2, 'com.selenium.testScripts.TestScript')
+data.setCell(27, 3, 1112);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'searchBoxValidation')
+data.setCell(28, 2, 'com.selenium.testScripts.TestScript')
+data.setCell(28, 3, 560);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'urlValidation')
+data.setCell(29, 2, 'com.selenium.testScripts.TestScript')
+data.setCell(29, 3, 267);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'urlValidation')
+data.setCell(30, 2, 'com.selenium.testScripts.TestScript')
+data.setCell(30, 3, 165);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 7 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">39 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.selenium.testScripts.TestScript</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">chosenDateAssertion</span>
+                <br/>
+                <span class="ignored-method-name">invalidPasswordloginErrorMessageValidation</span>
+                <br/>
+                <span class="ignored-method-name">chosenDateAssertion</span>
+                <br/>
+                <span class="ignored-method-name">invalidPasswordloginErrorMessageValidation</span>
+                <br/>
+                <span class="ignored-method-name">getBookshelvesNameAndPrice</span>
+                <br/>
+                <span class="ignored-method-name">giftCardsFormValidation</span>
+                <br/>
+                <span class="ignored-method-name">loginIconValidation</span>
+                <br/>
+                <span class="ignored-method-name">invalidEmailLoginErrorMessageValidation</span>
+                <br/>
+                <span class="ignored-method-name">invalidEmailLoginErrorMessageValidation</span>
+                <br/>
+                <span class="ignored-method-name">invalidDataSearchBoxValidation</span>
+                <br/>
+                <span class="ignored-method-name">searchBoxValidation</span>
+                <br/>
+                <span class="ignored-method-name">invalidDataSearchBoxValidation</span>
+                <br/>
+                <span class="ignored-method-name">getBeingatHomeCollectionsList</span>
+                <br/>
+                <span class="ignored-method-name">getBeingatHomeCollectionsList</span>
+                <br/>
+                <span class="ignored-method-name">sortByFilterValidation</span>
+                <br/>
+                <span class="ignored-method-name">sortByFilterValidation</span>
+                <br/>
+                <span class="ignored-method-name">giftCardsCalendarAssertion</span>
+                <br/>
+                <span class="ignored-method-name">giftCardsCalendarAssertion</span>
+                <br/>
+                <span class="ignored-method-name">navigateUsingSuggestionsResultPageAssertion</span>
+                <br/>
+                <span class="ignored-method-name">navigateUsingSuggestionsResultPageAssertion</span>
+                <br/>
+                <span class="ignored-method-name">priceFilterValidation</span>
+                <br/>
+                <span class="ignored-method-name">priceFilterValidation</span>
+                <br/>
+                <span class="ignored-method-name">giftCardsLinkTextNavigationValidation</span>
+                <br/>
+                <span class="ignored-method-name">giftCardsLinkTextNavigationValidation</span>
+                <br/>
+                <span class="ignored-method-name">getStudyChairsNameAndPrice</span>
+                <br/>
+                <span class="ignored-method-name">urlValidation</span>
+                <br/>
+                <span class="ignored-method-name">validLoginCredentialsValidation</span>
+                <br/>
+                <span class="ignored-method-name">excludeOutOfStockFilterValidation</span>
+                <br/>
+                <span class="ignored-method-name">excludeOutOfStockFilterValidation</span>
+                <br/>
+                <span class="ignored-method-name">navigationUsingSuggestionsValidation</span>
+                <br/>
+                <span class="ignored-method-name">navigationUsingSuggestionsValidation</span>
+                <br/>
+                <span class="ignored-method-name">navigationUsingSeacrhIconResultsPageAssertion</span>
+                <br/>
+                <span class="ignored-method-name">navigationUsingSeacrhIconResultsPageAssertion</span>
+                <br/>
+                <span class="ignored-method-name">storageTypeFilterValidation</span>
+                <br/>
+                <span class="ignored-method-name">storageTypeFilterValidation</span>
+                <br/>
+                <span class="ignored-method-name">navigationUsingSearchIconValidation</span>
+                <br/>
+                <span class="ignored-method-name">navigationUsingSearchIconValidation</span>
+                <br/>
+                <span class="ignored-method-name">chosenOccasionAssertion</span>
+                <br/>
+                <span class="ignored-method-name">chosenOccasionAssertion</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.selenium.testScripts.TestScript</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachMethod(public void com.selenium.testScripts.TestScript.urlValidation())</span>
+                <span class="method-start">18996 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">urlValidation</span>
+                <span class="method-start">25424 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachMethod([TestResult name=urlValidation status=SUCCESS method=TestScript.urlValidation()[pri:0, instance:com....)</span>
+                <span class="method-start">25589 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachMethod(public void com.selenium.testScripts.TestScript.loginIconValidation())</span>
+                <span class="method-start">25597 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginIconValidation</span>
+                <span class="method-start">31458 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachMethod([TestResult name=loginIconValidation status=SKIP method=TestScript.loginIconValidation()[pri:1, inst...)</span>
+                <span class="method-start">121668 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachMethod(public void com.selenium.testScripts.TestScript.loginIconValidation())</span>
+                <span class="method-start">121671 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginIconValidation</span>
+                <span class="method-start">128248 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachMethod([TestResult name=loginIconValidation status=SUCCESS method=TestScript.loginIconValidation()[pri:1, i...)</span>
+                <span class="method-start">155199 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachMethod(public void com.selenium.testScripts.TestScript.searchBoxValidation(java.lang.String))</span>
+                <span class="method-start">155829 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">searchBoxValidation(Study Chairs)</span>
+                <span class="method-start">162282 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachMethod([TestResult name=searchBoxValidation status=SUCCESS method=TestScript.searchBoxValidation(java.lang....)</span>
+                <span class="method-start">163396 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">163397 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">164572 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachMethod(public void com.selenium.testScripts.TestScript.validLoginCredentialsValidation())</span>
+                <span class="method-start">181416 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validLoginCredentialsValidation</span>
+                <span class="method-start">188019 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachMethod([TestResult name=validLoginCredentialsValidation status=SUCCESS method=TestScript.validLoginCredenti...)</span>
+                <span class="method-start">227223 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachMethod(public void com.selenium.testScripts.TestScript.getStudyChairsNameAndPrice(java.lang.String))</span>
+                <span class="method-start">227235 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getStudyChairsNameAndPrice(Study Chairs)</span>
+                <span class="method-start">233482 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachMethod([TestResult name=getStudyChairsNameAndPrice status=SUCCESS method=TestScript.getStudyChairsNameAndPr...)</span>
+                <span class="method-start">244795 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachMethod(public void com.selenium.testScripts.TestScript.getBookshelvesNameAndPrice(java.lang.String))</span>
+                <span class="method-start">244828 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getBookshelvesNameAndPrice(Bookshelves)</span>
+                <span class="method-start">251507 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachMethod([TestResult name=getBookshelvesNameAndPrice status=SUCCESS method=TestScript.getBookshelvesNameAndPr...)</span>
+                <span class="method-start">272082 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachMethod(public void com.selenium.testScripts.TestScript.giftCardsFormValidation(java.lang.String,java.lang.S...)</span>
+                <span class="method-start">272091 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">giftCardsFormValidation(sathya@gmail.com, sathya@gmail.com, Coders, codersshelfgmail.com, 9.87654321E9)</span>
+                <span class="method-start">278072 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachMethod([TestResult name=giftCardsFormValidation status=SUCCESS method=TestScript.giftCardsFormValidation(ja...)</span>
+                <span class="method-start">289465 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">289466 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">290314 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachMethod(public void com.selenium.testScripts.TestScript.urlValidation())</span>
+                <span class="method-start">308504 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">urlValidation</span>
+                <span class="method-start">314970 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachMethod([TestResult name=urlValidation status=SUCCESS method=TestScript.urlValidation()[pri:0, instance:com....)</span>
+                <span class="method-start">315238 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachMethod(public void com.selenium.testScripts.TestScript.loginIconValidation())</span>
+                <span class="method-start">315240 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginIconValidation</span>
+                <span class="method-start">321229 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachMethod([TestResult name=loginIconValidation status=SUCCESS method=TestScript.loginIconValidation()[pri:1, i...)</span>
+                <span class="method-start">348301 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachMethod(public void com.selenium.testScripts.TestScript.invalidEmailLoginErrorMessageValidation())</span>
+                <span class="method-start">348303 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">invalidEmailLoginErrorMessageValidation</span>
+                <span class="method-start">354580 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachMethod([TestResult name=invalidEmailLoginErrorMessageValidation status=SUCCESS method=TestScript.invalidEma...)</span>
+                <span class="method-start">387484 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachMethod(public void com.selenium.testScripts.TestScript.invalidPasswordloginErrorMessageValidation())</span>
+                <span class="method-start">387487 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">invalidPasswordloginErrorMessageValidation</span>
+                <span class="method-start">393695 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachMethod([TestResult name=invalidPasswordloginErrorMessageValidation status=SUCCESS method=TestScript.invalid...)</span>
+                <span class="method-start">427540 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachMethod(public void com.selenium.testScripts.TestScript.validLoginCredentialsValidation())</span>
+                <span class="method-start">427544 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validLoginCredentialsValidation</span>
+                <span class="method-start">433863 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachMethod([TestResult name=validLoginCredentialsValidation status=SUCCESS method=TestScript.validLoginCredenti...)</span>
+                <span class="method-start">472627 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachMethod(public void com.selenium.testScripts.TestScript.searchBoxValidation(java.lang.String))</span>
+                <span class="method-start">472638 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">searchBoxValidation(Study Chairs)</span>
+                <span class="method-start">478616 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachMethod([TestResult name=searchBoxValidation status=SUCCESS method=TestScript.searchBoxValidation(java.lang....)</span>
+                <span class="method-start">479176 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachMethod(public void com.selenium.testScripts.TestScript.invalidDataSearchBoxValidation(java.lang.String))</span>
+                <span class="method-start">479206 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">invalidDataSearchBoxValidation(123#)</span>
+                <span class="method-start">485249 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachMethod([TestResult name=invalidDataSearchBoxValidation status=SUCCESS method=TestScript.invalidDataSearchBo...)</span>
+                <span class="method-start">487948 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachMethod(public void com.selenium.testScripts.TestScript.navigationUsingSearchIconValidation(java.lang.String...)</span>
+                <span class="method-start">487957 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">navigationUsingSearchIconValidation(Study Chairs)</span>
+                <span class="method-start">494090 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachMethod([TestResult name=navigationUsingSearchIconValidation status=SUCCESS method=TestScript.navigationUsin...)</span>
+                <span class="method-start">498630 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachMethod(public void com.selenium.testScripts.TestScript.navigationUsingSeacrhIconResultsPageAssertion(java.l...)</span>
+                <span class="method-start">498635 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">navigationUsingSeacrhIconResultsPageAssertion(Study Chairs)</span>
+                <span class="method-start">504811 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachMethod([TestResult name=navigationUsingSeacrhIconResultsPageAssertion status=SUCCESS method=TestScript.navi...)</span>
+                <span class="method-start">510027 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachMethod(public void com.selenium.testScripts.TestScript.sortByFilterValidation(java.lang.String))</span>
+                <span class="method-start">510032 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">sortByFilterValidation(Study Chairs)</span>
+                <span class="method-start">516411 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachMethod([TestResult name=sortByFilterValidation status=SUCCESS method=TestScript.sortByFilterValidation(java...)</span>
+                <span class="method-start">523294 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachMethod(public void com.selenium.testScripts.TestScript.getStudyChairsNameAndPrice(java.lang.String))</span>
+                <span class="method-start">523299 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getStudyChairsNameAndPrice(Study Chairs)</span>
+                <span class="method-start">529254 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachMethod([TestResult name=getStudyChairsNameAndPrice status=SUCCESS method=TestScript.getStudyChairsNameAndPr...)</span>
+                <span class="method-start">539328 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachMethod(public void com.selenium.testScripts.TestScript.navigationUsingSuggestionsValidation(java.lang.Strin...)</span>
+                <span class="method-start">539335 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">navigationUsingSuggestionsValidation(Bookshelves)</span>
+                <span class="method-start">545636 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachMethod([TestResult name=navigationUsingSuggestionsValidation status=SUCCESS method=TestScript.navigationUsi...)</span>
+                <span class="method-start">552841 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachMethod(public void com.selenium.testScripts.TestScript.navigateUsingSuggestionsResultPageAssertion(java.lan...)</span>
+                <span class="method-start">552853 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">navigateUsingSuggestionsResultPageAssertion(Bookshelves)</span>
+                <span class="method-start">558730 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachMethod([TestResult name=navigateUsingSuggestionsResultPageAssertion status=SUCCESS method=TestScript.naviga...)</span>
+                <span class="method-start">561624 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachMethod(public void com.selenium.testScripts.TestScript.priceFilterValidation(java.lang.String))</span>
+                <span class="method-start">561633 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">priceFilterValidation(Bookshelves)</span>
+                <span class="method-start">568036 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachMethod([TestResult name=priceFilterValidation status=SUCCESS method=TestScript.priceFilterValidation(java.l...)</span>
+                <span class="method-start">577202 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachMethod(public void com.selenium.testScripts.TestScript.storageTypeFilterValidation(java.lang.String))</span>
+                <span class="method-start">577210 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">storageTypeFilterValidation(Bookshelves)</span>
+                <span class="method-start">583511 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachMethod([TestResult name=storageTypeFilterValidation status=SUCCESS method=TestScript.storageTypeFilterValid...)</span>
+                <span class="method-start">593623 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachMethod(public void com.selenium.testScripts.TestScript.excludeOutOfStockFilterValidation(java.lang.String))</span>
+                <span class="method-start">593634 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">excludeOutOfStockFilterValidation(Bookshelves)</span>
+                <span class="method-start">599775 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachMethod([TestResult name=excludeOutOfStockFilterValidation status=SUCCESS method=TestScript.excludeOutOfStoc...)</span>
+                <span class="method-start">612227 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachMethod(public void com.selenium.testScripts.TestScript.getBookshelvesNameAndPrice(java.lang.String))</span>
+                <span class="method-start">612233 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getBookshelvesNameAndPrice(Bookshelves)</span>
+                <span class="method-start">618551 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachMethod([TestResult name=getBookshelvesNameAndPrice status=SUCCESS method=TestScript.getBookshelvesNameAndPr...)</span>
+                <span class="method-start">639731 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachMethod(public void com.selenium.testScripts.TestScript.getBeingatHomeCollectionsList())</span>
+                <span class="method-start">639732 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getBeingatHomeCollectionsList</span>
+                <span class="method-start">646230 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachMethod([TestResult name=getBeingatHomeCollectionsList status=SUCCESS method=TestScript.getBeingatHomeCollec...)</span>
+                <span class="method-start">651351 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachMethod(public void com.selenium.testScripts.TestScript.giftCardsLinkTextNavigationValidation())</span>
+                <span class="method-start">651351 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">giftCardsLinkTextNavigationValidation</span>
+                <span class="method-start">657510 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachMethod([TestResult name=giftCardsLinkTextNavigationValidation status=SUCCESS method=TestScript.giftCardsLin...)</span>
+                <span class="method-start">661997 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachMethod(public void com.selenium.testScripts.TestScript.chosenOccasionAssertion())</span>
+                <span class="method-start">661998 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">chosenOccasionAssertion</span>
+                <span class="method-start">668220 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachMethod([TestResult name=chosenOccasionAssertion status=SUCCESS method=TestScript.chosenOccasionAssertion()[...)</span>
+                <span class="method-start">672186 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachMethod(public void com.selenium.testScripts.TestScript.giftCardsCalendarAssertion())</span>
+                <span class="method-start">672186 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">giftCardsCalendarAssertion</span>
+                <span class="method-start">678320 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachMethod([TestResult name=giftCardsCalendarAssertion status=SUCCESS method=TestScript.giftCardsCalendarAssert...)</span>
+                <span class="method-start">688207 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachMethod(public void com.selenium.testScripts.TestScript.chosenDateAssertion())</span>
+                <span class="method-start">688207 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">chosenDateAssertion</span>
+                <span class="method-start">694585 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachMethod([TestResult name=chosenDateAssertion status=SUCCESS method=TestScript.chosenDateAssertion()[pri:21, ...)</span>
+                <span class="method-start">704491 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachMethod(public void com.selenium.testScripts.TestScript.giftCardsFormValidation(java.lang.String,java.lang.S...)</span>
+                <span class="method-start">704498 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">giftCardsFormValidation(sathya@gmail.com, sathya@gmail.com, Coders, codersshelfgmail.com, 9.87654321E9)</span>
+                <span class="method-start">710718 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachMethod([TestResult name=giftCardsFormValidation status=SUCCESS method=TestScript.giftCardsFormValidation(ja...)</span>
+                <span class="method-start">723493 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">723496 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
